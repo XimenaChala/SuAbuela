@@ -1,0 +1,20 @@
+@startuml Estudiantes   
+
+class Estudiantes{
+    - int : GrupoID
+    - Int : Numero_Identidad
+    - String : Asignatura
+    - Int : Notas
+    
+}
+
+class Asignatura{
+    - int : GrupoID
+    - String : Asignatura_Profesor
+    - Date : Profesor
+    - String : horarios
+}
+
+Estudiantes "2" -- "*" Asignatura : contiene
+@enduml
+
